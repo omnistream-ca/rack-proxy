@@ -74,7 +74,7 @@ module Rack
 
       # Initialize request
       if source_request.fullpath == ""
-        full_path = URI.parse(env['REQUEST_URI']).request_uri
+        full_path = env['REQUEST_URI']
       else
         full_path = source_request.fullpath
       end
